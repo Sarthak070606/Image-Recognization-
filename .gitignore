@@ -3,6 +3,5 @@ __pycache__/
 .venv/
 venv/
 data/
-checkpoints/*.pth
 .streamlit/secrets.toml
 .DS_Store
