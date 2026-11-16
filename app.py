@@ -19,7 +19,9 @@ st.set_page_config(
     layout="centered"
 )
 
-MODEL_PATH = Path("checkpoints/mnist_cnn.pth")
+BASE_DIR = Path(__file__).resolve().parent
+
+MODEL_PATH = BASE_DIR / "checkpoints" / "mnist_cnn.pth"
 
 DEVICE = torch.device(
     "cuda" if torch.cuda.is_available() else "cpu"
